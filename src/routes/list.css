@@ -1,0 +1,59 @@
+.posts-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Maintain consistent column widths */
+}
+
+.posts-table th,
+.posts-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Add '...' for overflowing text */
+}
+
+/* Specific column width assignments */
+.posts-table th:nth-child(1),
+.posts-table td:nth-child(1) {
+  width: 5%; /* Width for ID */
+}
+
+.posts-table th:nth-child(2),
+.posts-table td:nth-child(2) {
+  width: 25%; /* Width for Title */
+}
+
+.posts-table th:nth-child(4),
+.posts-table td:nth-child(4) {
+  width: 10%; /* Width for Actions */
+}
+
+/* The Body column (3rd child) will automatically take up the remaining space. */
+
+.posts-table th {
+  background-color: #f4f4f4;
+}
+
+.posts-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.posts-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.view-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-button:hover {
+  background-color: #45a049;
+}
